@@ -25,16 +25,4 @@ export const farms: FarmConfig[] = [
     quoteToken: tokens.bbshk,
     categoryType: 'core',
   },
-  // << NOT PRESENT IN POOLS
-  {
-    pid: 2,
-    lpSymbol: 'BUSD-BNB LP',
-    lpAddresses: {
-      42: '0x112Dc48d876F4179627F0A29a016E6F130b07E7E',
-    },
-    token: tokens.busd,
-    quoteToken: tokens.wbnb,
-    categoryType: 'core',
-  },
-  // NOT PRESENT IN POOLS >>
 ];
