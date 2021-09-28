@@ -3,6 +3,7 @@ import React from 'react';
 import OpenLink from '@/components/sections/Farms/OpenLink';
 import { getAddress } from '@/services/web3/contractHelpers';
 import { Farm } from '@/types';
+import { getAddLiquidityUrl } from '@/utils';
 
 import DetailsBadge from '../DetailsBadge';
 
@@ -18,9 +19,7 @@ const DetailsLinks: React.FC<IDetailsLinksProps> = ({ farm }) => {
     ? [
         // TODO: correct redirect to Add Liquidity with initializing add liquidity
         {
-          href: `/trade/liquidity/add/${getAddress(quoteToken.address)}/${getAddress(
-            token.address,
-          )}`,
+          href: getAddLiquidityUrl(quoteToken, token),
           text: `Get ${lpSymbol}`,
         },
       ]
