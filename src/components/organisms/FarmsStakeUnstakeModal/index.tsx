@@ -91,6 +91,7 @@ const FarmsStakeUnstakeModal: React.FC = observer(() => {
         'Error',
         'Please try again. Confirm the transaction and make sure you are paying enough gas!',
       );
+      console.error(e);
     } finally {
       setPendingTx(false);
     }
