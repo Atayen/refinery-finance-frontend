@@ -25,4 +25,14 @@ export const farms: FarmConfig[] = [
     quoteToken: tokens.bbshk,
     categoryType: 'core',
   },
+  {
+    pid: 2,
+    lpSymbol: 'UGBG-AVOOG LP',
+    lpAddresses: {
+      42: '0xc11425B023aF7AD46d16e880BFB56de9c6f16DA5',
+    },
+    token: tokens.ugbg,
+    quoteToken: tokens.avoog,
+    categoryType: 'core',
+  }
 ];
