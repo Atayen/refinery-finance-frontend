@@ -6,6 +6,7 @@ import { Farm } from '@/types';
 import { getAddLiquidityUrl } from '@/utils';
 
 import DetailsBadge from '../DetailsBadge';
+import { useScannerUrl } from '@/hooks/useScannerUrl';
 
 interface IDetailsLinksProps {
   farm: Farm;
@@ -14,6 +15,7 @@ interface IDetailsLinksProps {
 const DetailsLinks: React.FC<IDetailsLinksProps> = ({ farm }) => {
   const { lpSymbol, quoteToken, token, lpAddresses, multiplier, categoryType } = farm;
   const lpAddress = getAddress(lpAddresses);
+  const viewContractLink = useScannerUrl(`address/${lpAddress}`);
   const isActiveFarm = multiplier !== '0X';
   const getLpRow = isActiveFarm
     ? [
@@ -27,12 +29,12 @@ const DetailsLinks: React.FC<IDetailsLinksProps> = ({ farm }) => {
   const links = [
     ...getLpRow,
     {
-      href: `https://bscscan.com/address/${lpAddress}`,
+      href: viewContractLink,
       text: 'View Contract',
     },
     // TODO: correct redirect to pair info
     {
-      href: `/pool/${lpAddress}`,
+      href: viewContractLink, // `/pool/${lpAddress}`,
       text: 'See Pair Info',
     },
   ];
