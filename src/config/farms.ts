@@ -14,16 +14,7 @@ export const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb, // ??
     categoryType: 'core',
   },
-  {
-    pid: 1,
-    lpSymbol: 'TMPT-BBSHK LP',
-    lpAddresses: {
-      42: '0xE272657CD75052eCeF43D24F3Bb93faa67733b2c',
-    },
-    token: tokens.tmpt,
-    quoteToken: tokens.bbshk,
-    categoryType: 'core',
-  },
+  // pid 1 - is BAD
   {
     pid: 2,
     lpSymbol: 'UGBG-AVOOG LP',

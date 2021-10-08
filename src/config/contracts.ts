@@ -801,11 +801,11 @@ export const contracts = {
     ],
   },
   RP1: {
-    ADDRESS: '0x46D47456454dA7f5F2f3a831D0fdF264D940AaB3',
+    ADDRESS: '0xDb983d038Be5ab2beEF0b89a538655e85Ec25eC3',
     ABI: RocketPropellant,
   },
   REFINERY_VAULT: {
-    ADDRESS: '0xb0F0d907B7d4E869280A1F3cEDa4a3E8C48cE308',
+    ADDRESS: '0x0b6442Ed95904F673fde88f45291c301d91322a0',
     ABI: RefineryVault,
   },
   MULTICALL: {
@@ -816,7 +816,7 @@ export const contracts = {
     ABI: SmartRefinerInitializable,
   },
   MASTER_REFINER: {
-    ADDRESS: '0x9d09e68e0BF54b12e26CeE52cA7Fda24C571e153',
+    ADDRESS: '0xCb067C6d6C544386f7f37aD6b3ee85591c99165A',
     ABI: MasterRefiner,
   },
 };

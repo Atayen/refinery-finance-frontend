@@ -16,38 +16,11 @@ export const pools: PoolConfig[] = [
   {
     id: 1,
     stakingToken: tokens.rp1,
-    earningToken: tokens.bbshk,
+    earningToken: tokens.ugbg,
     contractAddress: {
-      42: '0xbf183592ce79efe53b654e9229301b910b075dfb',
+      42: '0xE61c4EbCec826A0Cc2dA45D1e4EAB60b2bfd523f',
     },
-    tokenPerBlock: '0.0868',
+    tokenPerBlock: '1.7361',
     // isFinished: true,
-  },
-  {
-    id: 2,
-    stakingToken: tokens.rp1,
-    earningToken: tokens.avoog,
-    contractAddress: {
-      42: '0x0a43e268e77cc967b192cc4126a022b0a780b9b0',
-    },
-    tokenPerBlock: '0.000000001',
-  },
-  {
-    id: 3,
-    stakingToken: tokens.rp1,
-    earningToken: tokens.avoog,
-    contractAddress: {
-      42: '0x8123603fb0b3EA661b63D1Ecefcd81ab3b4455d7',
-    },
-    tokenPerBlock: '1',
-  },
-  {
-    id: 4,
-    stakingToken: tokens.rp1,
-    earningToken: tokens.avoog,
-    contractAddress: {
-      42: '0xb60c94a36ce07dc3b8d9869a093a267d80af5353',
-    },
-    tokenPerBlock: '1',
   },
 ];
